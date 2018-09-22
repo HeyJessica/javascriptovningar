@@ -18,10 +18,10 @@
             <p class="lead">Hantering av inputs och html med hjälp av JavaScript</p>
             <div class="row">
                 <div class="col-sm-6">
-                    <h1 class="display-4">Namn: </h1>
+                    <h1 id="nameTitle" class="display-4">Namn: </h1>
                 </div>
                 <div class="col-sm-6">
-                    <h1 class="display-4">Epost: </h1>
+                    <h1 id="epostTitle" class="display-4">Epost: </h1>
                 </div>
             </div>
         </div>
@@ -35,10 +35,10 @@
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">@</span>
                     </div>
-                    <input type="text" class="form-control" placeholder="Fullständigt Namn" aria-label="Username" aria-describedby="basic-addon1">
+                    <input type="text" id="inputNamn" class="form-control" placeholder="Fullständigt Namn" aria-label="Username" aria-describedby="basic-addon1">
                 </div>
 
-                <a href="#" class="btn btn-primary">Lägg till</a>
+                <a href="#" class="btn btn-primary" onclick="setInputName()">Lägg till</a>
             </div>
         </div>
 
@@ -48,16 +48,16 @@
             <div class="card-body">
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon1">@</span>
+                        <span class="input-group-text" id="basic-addon2">@</span>
                     </div>
-                    <input type="text" class="form-control" placeholder="Epost-Adress" aria-label="Username" aria-describedby="basic-addon1">
+                    <input type="text" id="inputEpost" class="form-control" placeholder="Epost-Adress" aria-label="Username" aria-describedby="basic-addon1">
                 </div>
-                <a href="#" class="btn btn-primary">Lägg till</a>
+                <a href="#" class="btn btn-primary" onclick="setInputEpost()">Lägg till</a>
             </div>
         </div>
     </div>
 
-
+    <script src="script.js"/>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
